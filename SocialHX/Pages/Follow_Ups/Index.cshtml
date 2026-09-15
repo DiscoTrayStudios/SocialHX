@@ -1,0 +1,54 @@
+@page
+@model SocialHX.Pages.Follow_Ups.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Follow_Up[0].Case_Number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Follow_Up[0].Response)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Follow_Up[0].Student_Report)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Follow_Up[0].Student_Adjustments)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Follow_Up) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Case_Number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Response)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Student_Report)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Student_Adjustments)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Follow_Up_ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Follow_Up_ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Follow_Up_ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

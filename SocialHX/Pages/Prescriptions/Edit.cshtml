@@ -1,0 +1,80 @@
+@page
+@model SocialHX.Pages.Prescriptions.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Prescription</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Prescription.Case_Number" />
+            <div class="form-group">
+                <label asp-for="Prescription.Student_ID" class="control-label"></label>
+                <input asp-for="Prescription.Student_ID" class="form-control" />
+                <span asp-validation-for="Prescription.Student_ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Prescription.Prescriber_ID" class="control-label"></label>
+                <input asp-for="Prescription.Prescriber_ID" class="form-control" />
+                <span asp-validation-for="Prescription.Prescriber_ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Prescription.Date_Time" class="control-label"></label>
+                <input asp-for="Prescription.Date_Time" class="form-control" />
+                <span asp-validation-for="Prescription.Date_Time" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Prescription.Event1_ID" class="control-label"></label>
+                <input asp-for="Prescription.Event1_ID" class="form-control" />
+                <span asp-validation-for="Prescription.Event1_ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Prescription.Event2_ID" class="control-label"></label>
+                <input asp-for="Prescription.Event2_ID" class="form-control" />
+                <span asp-validation-for="Prescription.Event2_ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Prescription.Event3_ID" class="control-label"></label>
+                <input asp-for="Prescription.Event3_ID" class="form-control" />
+                <span asp-validation-for="Prescription.Event3_ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Prescription.Event4_ID" class="control-label"></label>
+                <input asp-for="Prescription.Event4_ID" class="form-control" />
+                <span asp-validation-for="Prescription.Event4_ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Prescription.Follow_Up_ID" class="control-label"></label>
+                <input asp-for="Prescription.Follow_Up_ID" class="form-control" />
+                <span asp-validation-for="Prescription.Follow_Up_ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Prescription.Follow_Up_Refill_ID" class="control-label"></label>
+                <input asp-for="Prescription.Follow_Up_Refill_ID" class="form-control" />
+                <span asp-validation-for="Prescription.Follow_Up_Refill_ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Prescription.Status" class="control-label"></label>
+                <select asp-for="Prescription.Status" class="form-control" ></select>
+                <span asp-validation-for="Prescription.Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

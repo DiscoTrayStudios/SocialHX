@@ -1,0 +1,51 @@
+@page
+@model SocialHX.Pages.Follow_Ups.CreateModel
+
+        @{
+        ViewData["Title"] = "Create";
+        }
+        
+        <h1>Create</h1>
+        
+    <h4>Follow_Up</h4>
+    <hr />
+    <div class="row">
+    <div class="col-md-4">
+    <form method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Follow_Up.Case_Number" class="control-label"></label>
+                <input asp-for="Follow_Up.Case_Number" class="form-control" />
+                <span asp-validation-for="Follow_Up.Case_Number" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Follow_Up.Response" /> @Html.DisplayNameFor(model => model.Follow_Up.Response)
+                </label>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Follow_Up.Student_Report" class="control-label"></label>
+                <input asp-for="Follow_Up.Student_Report" class="form-control" aria-required="true"/>
+                <span asp-validation-for="Follow_Up.Student_Report" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Follow_Up.Student_Adjustments" class="control-label"></label>
+                <input asp-for="Follow_Up.Student_Adjustments" class="form-control" aria-required="true"/>
+                <span asp-validation-for="Follow_Up.Student_Adjustments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

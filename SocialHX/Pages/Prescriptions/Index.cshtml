@@ -1,0 +1,90 @@
+@page
+@model SocialHX.Pages.Prescriptions.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Prescription[0].Student_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prescription[0].Prescriber_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prescription[0].Date_Time)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prescription[0].Event1_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prescription[0].Event2_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prescription[0].Event3_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prescription[0].Event4_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prescription[0].Follow_Up_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prescription[0].Follow_Up_Refill_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prescription[0].Status)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Prescription) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Student_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prescriber_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date_Time)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Event1_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Event2_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Event3_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Event4_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Follow_Up_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Follow_Up_Refill_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Case_Number">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Case_Number">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Case_Number">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

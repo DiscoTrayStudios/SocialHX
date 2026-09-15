@@ -1,0 +1,179 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFramework = net10.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.RootNamespace = SocialHX
+build_property.RootNamespace = SocialHX
+build_property.ProjectDir = C:\Users\chris\Database and Web\SocialHX\SocialHX\SocialHX\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\chris\Database and Web\SocialHX\SocialHX\SocialHX
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Activities/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0aXZpdGllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Activities/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0aXZpdGllc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Activities/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0aXZpdGllc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Activities/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0aXZpdGllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Activities/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0aXZpdGllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Follow_Ups/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9sbG93X1Vwc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Follow_Ups/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9sbG93X1Vwc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Follow_Ups/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9sbG93X1Vwc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Follow_Ups/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9sbG93X1Vwc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Follow_Ups/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9sbG93X1Vwc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Prescribed_Events/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaWJlZF9FdmVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Prescribed_Events/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaWJlZF9FdmVudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Prescribed_Events/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaWJlZF9FdmVudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Prescribed_Events/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaWJlZF9FdmVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Prescribed_Events/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaWJlZF9FdmVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Prescribers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaWJlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Prescribers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaWJlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Prescribers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaWJlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Prescribers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaWJlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Prescribers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaWJlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Prescriptions/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaXB0aW9uc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Prescriptions/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaXB0aW9uc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Prescriptions/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaXB0aW9uc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Prescriptions/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaXB0aW9uc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Prescriptions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc2NyaXB0aW9uc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Students/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Students/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Students/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Students/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Students/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chris/Database and Web/SocialHX/SocialHX/SocialHX/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-zmdoexrowi

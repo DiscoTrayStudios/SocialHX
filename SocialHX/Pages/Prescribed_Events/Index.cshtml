@@ -1,0 +1,48 @@
+@page
+@model SocialHX.Pages.Prescribed_Events.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Prescribed_Event[0].Notes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prescribed_Event[0].Other_Person)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prescribed_Event[0].Event_ID)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Prescribed_Event) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Notes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Other_Person)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Event_ID)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Prescribed_Event_ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Prescribed_Event_ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Prescribed_Event_ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
