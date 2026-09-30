@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SocialHX")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc8ab789015e8b7e108fad7d36e535916b02f3cf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ade518bedab87e68af33f26e69d00e34bdd4908")]
 [assembly: System.Reflection.AssemblyProductAttribute("SocialHX")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SocialHX")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

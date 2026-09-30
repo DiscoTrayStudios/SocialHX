@@ -30,7 +30,7 @@ namespace SocialHX.Pages.Activities
                 return NotFound();
             }
 
-            var activity =  await _context.Activity.FirstOrDefaultAsync(m => m.Event_ID == id);
+            var activity =  await _context.Activity.FirstOrDefaultAsync(m => m.ActivityID == id);
             if (activity == null)
             {
                 return NotFound();
@@ -56,7 +56,7 @@ namespace SocialHX.Pages.Activities
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!ActivityExists(Activity.Event_ID))
+                if (!ActivityExists(Activity.ActivityID))
                 {
                     return NotFound();
                 }
@@ -71,7 +71,7 @@ namespace SocialHX.Pages.Activities
 
         private bool ActivityExists(int id)
         {
-            return _context.Activity.Any(e => e.Event_ID == id);
+            return _context.Activity.Any(e => e.ActivityID == id);
         }
     }
 }

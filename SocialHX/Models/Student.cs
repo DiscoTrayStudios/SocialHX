@@ -1,11 +1,11 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SocialHX.Models;
 
 public class Student
 {
-    [Key]
-    public int Student_ID { get; set; }
+    public int StudentID { get; set; }
     [Required]
     public required string Name { get; set; }
     public int Year { get; set; }

@@ -28,7 +28,7 @@ namespace SocialHX.Pages.Activities
                 return NotFound();
             }
 
-            var activity = await _context.Activity.FirstOrDefaultAsync(m => m.Event_ID == id);
+            var activity = await _context.Activity.FirstOrDefaultAsync(m => m.ActivityID == id);
 
             if (activity is not null)
             {

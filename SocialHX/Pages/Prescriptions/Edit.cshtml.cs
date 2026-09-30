@@ -30,12 +30,19 @@ namespace SocialHX.Pages.Prescriptions
                 return NotFound();
             }
 
-            var prescription =  await _context.Prescription.FirstOrDefaultAsync(m => m.Case_Number == id);
+            var prescription = await _context.Prescription.FirstOrDefaultAsync(m => m.PrescriptionID == id);
             if (prescription == null)
             {
                 return NotFound();
             }
             Prescription = prescription;
+            ViewData["Event1ID"] = new SelectList(_context.Activity, "ActivityID", "Name");
+            ViewData["Event2ID"] = new SelectList(_context.Activity, "ActivityID", "Name");
+            ViewData["Event3ID"] = new SelectList(_context.Activity, "ActivityID", "Name");
+            ViewData["Event4ID"] = new SelectList(_context.Activity, "ActivityID", "Name");
+            ViewData["PrescriberID"] = new SelectList(_context.Prescriber, "PrescriberID", "Email");
+            ViewData["StudentID"] = new SelectList(_context.Student, "StudentID", "Email");
+            ViewData["StatusList"] = new SelectList(Enum.GetValues(typeof(Status)));
             return Page();
         }
 
@@ -56,7 +63,7 @@ namespace SocialHX.Pages.Prescriptions
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PrescriptionExists(Prescription.Case_Number))
+                if (!PrescriptionExists(Prescription.PrescriptionID))
                 {
                     return NotFound();
                 }
@@ -71,7 +78,7 @@ namespace SocialHX.Pages.Prescriptions
 
         private bool PrescriptionExists(int id)
         {
-            return _context.Prescription.Any(e => e.Case_Number == id);
+            return _context.Prescription.Any(e => e.PrescriptionID == id);
         }
     }
 }

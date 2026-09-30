@@ -30,7 +30,7 @@ namespace SocialHX.Pages.Students
                 return NotFound();
             }
 
-            var student =  await _context.Student.FirstOrDefaultAsync(m => m.Student_ID == id);
+            var student =  await _context.Student.FirstOrDefaultAsync(m => m.StudentID == id);
             if (student == null)
             {
                 return NotFound();
@@ -56,7 +56,7 @@ namespace SocialHX.Pages.Students
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!StudentExists(Student.Student_ID))
+                if (!StudentExists(Student.StudentID))
                 {
                     return NotFound();
                 }
@@ -71,7 +71,7 @@ namespace SocialHX.Pages.Students
 
         private bool StudentExists(int id)
         {
-            return _context.Student.Any(e => e.Student_ID == id);
+            return _context.Student.Any(e => e.StudentID == id);
         }
     }
 }

@@ -30,7 +30,7 @@ namespace SocialHX.Pages.Prescribers
                 return NotFound();
             }
 
-            var prescriber =  await _context.Prescriber.FirstOrDefaultAsync(m => m.Prescriber_ID == id);
+            var prescriber =  await _context.Prescriber.FirstOrDefaultAsync(m => m.PrescriberID == id);
             if (prescriber == null)
             {
                 return NotFound();
@@ -56,7 +56,7 @@ namespace SocialHX.Pages.Prescribers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PrescriberExists(Prescriber.Prescriber_ID))
+                if (!PrescriberExists(Prescriber.PrescriberID))
                 {
                     return NotFound();
                 }
@@ -71,7 +71,7 @@ namespace SocialHX.Pages.Prescribers
 
         private bool PrescriberExists(int id)
         {
-            return _context.Prescriber.Any(e => e.Prescriber_ID == id);
+            return _context.Prescriber.Any(e => e.PrescriberID == id);
         }
     }
 }

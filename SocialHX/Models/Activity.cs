@@ -1,11 +1,11 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SocialHX.Models;
 
 public class Activity
 {
-    [Key]
-    public int Event_ID { get; set; }
+    public int ActivityID { get; set; }
     [Required]
     public required string Name { get; set; }
     [Required]

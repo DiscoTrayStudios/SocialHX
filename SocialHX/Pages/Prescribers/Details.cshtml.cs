@@ -28,7 +28,7 @@ namespace SocialHX.Pages.Prescribers
                 return NotFound();
             }
 
-            var prescriber = await _context.Prescriber.FirstOrDefaultAsync(m => m.Prescriber_ID == id);
+            var prescriber = await _context.Prescriber.FirstOrDefaultAsync(m => m.PrescriberID == id);
 
             if (prescriber is not null)
             {

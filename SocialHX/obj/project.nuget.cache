@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jgKWUwMjmEs=",
+  "dgSpecHash": "hS+aXUzGsC8=",
   "success": true,
-  "projectFilePath": "c:\\Users\\chris\\Database and Web\\SocialHX\\SocialHX\\SocialHX\\SocialHX.csproj",
+  "projectFilePath": "C:\\Users\\chris\\Database and Web\\SocialHX\\SocialHX\\SocialHX.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chris\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",
@@ -142,9 +142,9 @@
       "code": "NU1901",
       "level": "Warning",
       "message": "Package 'NuGet.Packaging' 6.12.1 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
-      "projectPath": "c:\\Users\\chris\\Database and Web\\SocialHX\\SocialHX\\SocialHX\\SocialHX.csproj",
+      "projectPath": "C:\\Users\\chris\\Database and Web\\SocialHX\\SocialHX\\SocialHX.csproj",
       "warningLevel": 1,
-      "filePath": "c:\\Users\\chris\\Database and Web\\SocialHX\\SocialHX\\SocialHX\\SocialHX.csproj",
+      "filePath": "C:\\Users\\chris\\Database and Web\\SocialHX\\SocialHX\\SocialHX.csproj",
       "libraryId": "NuGet.Packaging",
       "targetGraphs": [
         "net10.0"
@@ -154,9 +154,9 @@
       "code": "NU1901",
       "level": "Warning",
       "message": "Package 'NuGet.Protocol' 6.12.1 has a known low severity vulnerability, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
-      "projectPath": "c:\\Users\\chris\\Database and Web\\SocialHX\\SocialHX\\SocialHX\\SocialHX.csproj",
+      "projectPath": "C:\\Users\\chris\\Database and Web\\SocialHX\\SocialHX\\SocialHX.csproj",
       "warningLevel": 1,
-      "filePath": "c:\\Users\\chris\\Database and Web\\SocialHX\\SocialHX\\SocialHX\\SocialHX.csproj",
+      "filePath": "C:\\Users\\chris\\Database and Web\\SocialHX\\SocialHX\\SocialHX.csproj",
       "libraryId": "NuGet.Protocol",
       "targetGraphs": [
         "net10.0"

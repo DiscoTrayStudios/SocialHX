@@ -29,7 +29,7 @@ namespace SocialHX.Pages.Students
                 return NotFound();
             }
 
-            var student = await _context.Student.FirstOrDefaultAsync(m => m.Student_ID == id);
+            var student = await _context.Student.FirstOrDefaultAsync(m => m.StudentID == id);
 
             if (student is not null)
             {

@@ -19,7 +19,7 @@ namespace SocialHX.Migrations
 
             modelBuilder.Entity("SocialHX.Models.Activity", b =>
                 {
-                    b.Property<int>("Event_ID")
+                    b.Property<int>("ActivityID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -38,61 +38,80 @@ namespace SocialHX.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.HasKey("Event_ID");
+                    b.HasKey("ActivityID");
 
                     b.ToTable("Activity");
                 });
 
-            modelBuilder.Entity("SocialHX.Models.Follow_Up", b =>
+            modelBuilder.Entity("SocialHX.Models.FollowUpWeek1", b =>
                 {
-                    b.Property<int>("Follow_Up_ID")
+                    b.Property<int>("FollowUpWeek1ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Case_Number")
+                    b.Property<int>("PrescriptionID")
                         .HasColumnType("INTEGER");
 
                     b.Property<bool>("Response")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Student_Adjustments")
+                    b.Property<string>("StudentAdjustments")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Student_Report")
+                    b.Property<string>("StudentReport")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.HasKey("Follow_Up_ID");
+                    b.HasKey("FollowUpWeek1ID");
 
-                    b.ToTable("Follow_Up");
+                    b.HasIndex("PrescriptionID");
+
+                    b.ToTable("FollowUpWeek1");
                 });
 
-            modelBuilder.Entity("SocialHX.Models.Prescribed_Event", b =>
+            modelBuilder.Entity("SocialHX.Models.FollowUpWeek4", b =>
                 {
-                    b.Property<int>("Prescribed_Event_ID")
+                    b.Property<int>("FollowUpWeek4ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Event_ID")
+                    b.Property<string>("Barriers")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("DateTime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("DidAttend")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Notes")
+                    b.Property<bool>("DidMeet")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("EventsAttended")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Feelings")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Other_Person")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.Property<int>("PrescriptionID")
+                        .HasColumnType("INTEGER");
 
-                    b.HasKey("Prescribed_Event_ID");
+                    b.Property<bool>("Refill")
+                        .HasColumnType("INTEGER");
 
-                    b.ToTable("Prescribed_Event");
+                    b.HasKey("FollowUpWeek4ID");
+
+                    b.HasIndex("PrescriptionID");
+
+                    b.ToTable("FollowUpWeek4");
                 });
 
             modelBuilder.Entity("SocialHX.Models.Prescriber", b =>
                 {
-                    b.Property<int>("Prescriber_ID")
+                    b.Property<int>("PrescriberID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -112,55 +131,93 @@ namespace SocialHX.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.HasKey("Prescriber_ID");
+                    b.HasKey("PrescriberID");
 
                     b.ToTable("Prescriber");
                 });
 
             modelBuilder.Entity("SocialHX.Models.Prescription", b =>
                 {
-                    b.Property<int>("Case_Number")
+                    b.Property<int>("PrescriptionID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("Date_Time")
+                    b.Property<DateTime>("DateTime")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Event1_ID")
+                    b.Property<int>("Event1ID")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Event2_ID")
+                    b.Property<string>("Event1Notes")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Event1OtherPerson")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Event2ID")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Event3_ID")
+                    b.Property<string>("Event2Notes")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Event2OtherPerson")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Event3ID")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Event4_ID")
+                    b.Property<string>("Event3Notes")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Event3OtherPerson")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Event4ID")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Follow_Up_ID")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Event4Notes")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
-                    b.Property<int>("Follow_Up_Refill_ID")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Event4OtherPerson")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
-                    b.Property<int>("Prescriber_ID")
+                    b.Property<int>("PrescriberID")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("Status")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Student_ID")
+                    b.Property<int>("StudentID")
                         .HasColumnType("INTEGER");
 
-                    b.HasKey("Case_Number");
+                    b.HasKey("PrescriptionID");
+
+                    b.HasIndex("Event1ID");
+
+                    b.HasIndex("Event2ID");
+
+                    b.HasIndex("Event3ID");
+
+                    b.HasIndex("Event4ID");
+
+                    b.HasIndex("PrescriberID");
+
+                    b.HasIndex("StudentID");
 
                     b.ToTable("Prescription");
                 });
 
             modelBuilder.Entity("SocialHX.Models.Student", b =>
                 {
-                    b.Property<int>("Student_ID")
+                    b.Property<int>("StudentID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -175,9 +232,82 @@ namespace SocialHX.Migrations
                     b.Property<int>("Year")
                         .HasColumnType("INTEGER");
 
-                    b.HasKey("Student_ID");
+                    b.HasKey("StudentID");
 
                     b.ToTable("Student");
+                });
+
+            modelBuilder.Entity("SocialHX.Models.FollowUpWeek1", b =>
+                {
+                    b.HasOne("SocialHX.Models.Prescription", "Prescription")
+                        .WithMany()
+                        .HasForeignKey("PrescriptionID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Prescription");
+                });
+
+            modelBuilder.Entity("SocialHX.Models.FollowUpWeek4", b =>
+                {
+                    b.HasOne("SocialHX.Models.Prescription", "Prescription")
+                        .WithMany()
+                        .HasForeignKey("PrescriptionID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Prescription");
+                });
+
+            modelBuilder.Entity("SocialHX.Models.Prescription", b =>
+                {
+                    b.HasOne("SocialHX.Models.Activity", "Event1")
+                        .WithMany()
+                        .HasForeignKey("Event1ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SocialHX.Models.Activity", "Event2")
+                        .WithMany()
+                        .HasForeignKey("Event2ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SocialHX.Models.Activity", "Event3")
+                        .WithMany()
+                        .HasForeignKey("Event3ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SocialHX.Models.Activity", "Event4")
+                        .WithMany()
+                        .HasForeignKey("Event4ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SocialHX.Models.Prescriber", "Prescriber")
+                        .WithMany()
+                        .HasForeignKey("PrescriberID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SocialHX.Models.Student", "Student")
+                        .WithMany()
+                        .HasForeignKey("StudentID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Event1");
+
+                    b.Navigation("Event2");
+
+                    b.Navigation("Event3");
+
+                    b.Navigation("Event4");
+
+                    b.Navigation("Prescriber");
+
+                    b.Navigation("Student");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\chris\\Database and Web\\SocialHX\\SocialHX\\SocialHX\\SocialHX.csproj": {}
+    "C:\\Users\\chris\\Database and Web\\SocialHX\\SocialHX\\SocialHX.csproj": {}
   },
   "projects": {
-    "c:\\Users\\chris\\Database and Web\\SocialHX\\SocialHX\\SocialHX\\SocialHX.csproj": {
+    "C:\\Users\\chris\\Database and Web\\SocialHX\\SocialHX\\SocialHX.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\chris\\Database and Web\\SocialHX\\SocialHX\\SocialHX\\SocialHX.csproj",
+        "projectUniqueName": "C:\\Users\\chris\\Database and Web\\SocialHX\\SocialHX\\SocialHX.csproj",
         "projectName": "SocialHX",
-        "projectPath": "c:\\Users\\chris\\Database and Web\\SocialHX\\SocialHX\\SocialHX\\SocialHX.csproj",
+        "projectPath": "C:\\Users\\chris\\Database and Web\\SocialHX\\SocialHX\\SocialHX.csproj",
         "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\chris\\Database and Web\\SocialHX\\SocialHX\\SocialHX\\obj\\",
+        "outputPath": "C:\\Users\\chris\\Database and Web\\SocialHX\\SocialHX\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config"

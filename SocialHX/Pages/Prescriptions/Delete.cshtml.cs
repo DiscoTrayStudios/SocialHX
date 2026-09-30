@@ -29,7 +29,7 @@ namespace SocialHX.Pages.Prescriptions
                 return NotFound();
             }
 
-            var prescription = await _context.Prescription.FirstOrDefaultAsync(m => m.Case_Number == id);
+            var prescription = await _context.Prescription.FirstOrDefaultAsync(m => m.PrescriptionID == id);
 
             if (prescription is not null)
             {
